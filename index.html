@@ -95,11 +95,22 @@
 </script>
 <style>
     body {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    padding-top: 150px;
-}
+        margin: 0;
+        height: 100vh;
+        /*Ocupa toda a altura da tela*/
+        display: flex;
+        /*ativa flexbox*/
+        justify-content: center;
+        /*centraliza verticalmente*/
+        align-items: center;
+        /*centraliza horizontalmente*/
+        font-family: cursive;
+        background-size: cover;
+        /*imagem ocupa toda a tela*/
+        background-position: center;
+        background-repeat: no-repeat;
+        /*impede a repetição da imagem*/
+    }
 
 .container {
     background-color: rgba(255, 255, 255, 0.8);
@@ -131,5 +142,6 @@
       .catch(err => console.log("Erro no SW:", err));
   }
 </script>
+
 
 
