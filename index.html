@@ -95,27 +95,33 @@
 </script>
 <style>
     body {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color:black;
-        padding-top: 150px;}
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-top: 150px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 50px 40px;
+    border-radius: 10px;
+    max-width: 600px; /* Limita a largura do container */
+    width: 90%; /* Define a largura do container como 90% da tela */
+    margin: 0 auto; /* Centraliza o container */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+        font-size: 20px; /* Reduz o tamanho da fonte para telas menores */
+    }
     .container {
-        background-color: rgba(255, 255, 255, 0.8);
-        display: inline-block;
-        padding: 50px 40px;
-        border-radius: 10px;
-        
+        padding: 30px 20px; /* Menos padding em telas menores */
+        width: 95%; /* Faz o container ocupar 95% da largura da tela */
     }
-    @media (max-width: 768px) {
-        body {
-            padding-top: 50px;
-            font-size: 35px;
-        }
-        button {
-            font-size: 14px;
-            padding-top: 16px;
-        }
-    }
+}
 </style>
 </html>
 <script>
@@ -125,4 +131,5 @@
       .catch(err => console.log("Erro no SW:", err));
   }
 </script>
+
 
